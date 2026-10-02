@@ -59,11 +59,12 @@ class TasksManagementSeeder extends Seeder
             ]
         ]);
 
-        $this->db->table('users')->insert([
-            'username' => 'demo_user',
-            'full_name' => 'Juan Dela Cruz',
-            'email' => 'juan.delacruz@example.com',
-            'created_at' => '2026-09-28 08:00:00'
-        ]);
+		$this->db->table('users')->insert([
+			'username' => 'demo_user',
+			'full_name' => 'Juan Dela Cruz',
+			'email' => 'juan.delacruz@example.com',
+			'password' => '$2y$10$/TmB49nz6lpmFIw.xKQ8rO1vfSJJX8co35r4N6Oxx2D5HPyDPpyyy',
+			'created_at' => '2026-09-28 08:00:00'
+		]);
     }
 }
